@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+    background: rgb(208,15,76);
+background: linear-gradient(90deg, rgba(208,15,76,1) 13%, rgba(210,74,12,1) 30%, rgba(49,41,182,1) 85%);
+border: 12px solid salmon;
+border-radius: 30px;
+}
+h1{
+    background-color: black;
+    color: crimson;
+    font-family: arial black;
+    border: 5px dotted blue;
+    text-align: center;
+    text-decoration: underline;
+}
+        /* General section styling */
+.section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container styling */
+#container {
+    overflow: hidden; /* Hide items outside the visible area */
+    width: 80%; /* Adjust width to your preference */
+    margin: 0 auto; /* Center the container */
+    position: relative;
+}
+
+/* Gallery list styling */
+.gallery {
+    display: flex; /* Arrange items in a row */
+    gap: 15px;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    animation: slideshow 20s linear infinite; /* Add animation for slideshow */
+}
+
+/* Gallery list items styling */
+.gallery li {
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+/* Video and image styling */
+video, img {
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Slideshow keyframes */
+@keyframes slideshow {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+    </style>
+</head>
+<body>
+     <!-- Gallery Section -->
+    <div id="gallery" class="section">
+        <h1>Gallery</h1>
+        <p>Explore stunning images and videos of Lamborghini's iconic cars</p>
+        <div id="container">
+            <ul class="gallery">
+                <li>
+                    <video width="200px" src="Lamborghini/gallery/reta.mp4" autoplay muted></video>
+                </li>
+                <li>
+                    <img width="200px" src="Lamborghini/gallery/download (1).jpg" alt="Lamborghini Image 1">
+                </li>
+                <li>
+                    <img width="200px" src="Lamborghini/gallery/download (2).jpg" alt="Lamborghini Image 2">
+                </li>
+                <li>
+                    <img width="200px" src="Lamborghini/gallery/download.jpg" alt="Lamborghini Image 3">
+                </li>
+                <li>
+                    <img width="200px" src="Lamborghini/gallery/images.jpg" alt="Lamborghini Image 4">
+                </li>
+                <li>
+                    <video width="200px" src="Lamborghini/gallery/20153917-uhd_3840_2160_24fps.mp4" autoplay></video>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // JavaScript to loop the slideshow and ensure a smooth infinite transition
+const gallery = document.querySelector('.gallery');
+const items = Array.from(gallery.children);
+
+// Duplicate the gallery items to create a seamless loop
+items.forEach(item => {
+    const clone = item.cloneNode(true);
+    gallery.appendChild(clone);
+});
+
+
+    </script>
+</body>
+</html>

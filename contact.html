@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lamborghini</title>
+    <style>
+        body{
+    background: rgb(208,15,76);
+background: linear-gradient(90deg, rgba(208,15,76,1) 13%, rgba(210,74,12,1) 30%, rgba(49,41,182,1) 85%);
+border: 12px solid salmon;
+border-radius: 30px;
+}
+h1{
+    background-color: black;
+    color: crimson;
+    font-family: arial black;
+    border: 5px dotted blue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+        /* Form styles */
+#Contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#Contact-form input,
+#Contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#Contact-form input:focus,
+#Contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#Contact-form button {
+    padding: 10px;
+    font-size: 1rem;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#Contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .section {
+        padding: 20px;
+    }
+
+    .section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div id="Contact" class="section">
+        <h1>Contact</h1>
+        <p>
+            Reach out to us for inquiries, complaints, and feedback:
+            <br>
+            Email: <a href="mailto:automobililamborghini@legalmail.it">automobililamborghini@legalmail.it</a>
+            <br>
+            Phone: <a href="tel:+390519597282">+39 051 9597282</a>
+        </p>
+        <form id="Contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

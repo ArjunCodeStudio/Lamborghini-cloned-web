@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background: rgb(208,15,76);
+background: linear-gradient(90deg, rgba(208,15,76,1) 13%, rgba(210,74,12,1) 30%, rgba(49,41,182,1) 85%);
+border: 12px solid salmon;
+border-radius: 30px;
+}
+h1{
+    background-color: black;
+    color: crimson;
+    font-family: arial black;
+    border: 5px dotted blue;
+    text-align: center;
+    text-decoration: underline;
+}
+/* Individual model item container */
+.model-item {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Two columns: image and details */
+    gap: 20px; /* Space between image and details */
+    margin-bottom: 30px; /* Space between model items */
+    align-items: center; /* Vertically aligns image and details */
+    border-bottom: 1px solid #ccc; /* Optional: Separator between models */
+    padding-bottom: 20px;
+}
+
+/* Image styling */
+.model-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds depth */
+}
+
+/* Details container */
+.model-details h2 {
+    color: #222;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.model-details p {
+    margin: 5px 0;
+    color: blue;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Model Section -->
+    <div id="Model" class="section">
+        <h1>Model</h1>
+        <p>Some of our models include:</p>
+
+        <!-- Model Item 1 -->
+        <div class="model-item">
+            <img src="Lamborghini/model/Lamborghini Huracan Tecnica.jpg" alt="2023 Lamborghini Huracan">
+            <div class="model-details">
+                <h2>2023 Lamborghini Huracan</h2>
+                <p>Price: ₦520 Million</p>
+                <p>Engine: 5.2-liter naturally aspirated V10</p>
+                <p>Power Output: Approximately 630 horsepower (varies slightly by model)</p>
+                <p>Top Speed: Over 200 mph</p>
+            </div>
+        </div>
+
+        <!-- Model Item 2 -->
+        <div class="model-item">
+            <img src="Lamborghini/model/Blacked out Lamborghini Aventador SV ♠️ A Huge….jpg" alt="2024 Lamborghini Aventador">
+            <div class="model-details">
+                <h2>2024 Lamborghini Aventador</h2>
+                <p>Price: ₦600 Million</p>
+                <p>Engine: 6.5-liter naturally aspirated V12</p>
+                <p>Power Output: Estimated 769 horsepower</p>
+                <p>Top Speed: Over 217 mph</p>
+            </div>
+        </div>
+
+        <!-- Model Item 3 -->
+        <div class="model-item">
+            <img src="Lamborghini/model/2022lambo urus.jpg" alt="2022 Lamborghini Urus">
+            <div class="model-details">
+                <h2>2022 Lamborghini Urus</h2>
+                <p>Price: ₦250 Million</p>
+                <p>Engine: 4.0-liter twin-turbocharged V8</p>
+                <p>Top Speed: 190 mph</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car web</title>
+        <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Sidebar-->
+        <button onclick="showsection(Home)">Home</button>
+        <button onclick="showsection(Model)">Model</button>
+        <button onclick="showsection(Gallery)">Gallery</button>
+        <button onclick="showsection(Contact)">Contact</button>
+        <!--Main content-->
+        <div class="main content">
+            <!--Home section-->
+        <div id="Home" class="section active">
+            <h1>Home</h1>
+            <p>Welcome to the World of Lamborghini – Where Innovation Meets Performance
+                <video width="200px" src="Lamborghini/Home section/lamb.mp4" controls autoplay muted></video>
+            </p>
+        </div>
+          <!-- Model Section -->
+    <div id="Model" class="section">
+        <h1>Model</h1>
+        <p>Some of our models include:</p>
+
+        <!-- Model Item 1 -->
+        <div class="model-item">
+            <img src="Lamborghini/model/Lamborghini Huracan Tecnica.jpg" alt="2023 Lamborghini Huracan">
+            <div class="model-details">
+                <h2>2023 Lamborghini Huracan</h2>
+                <p>Price: ₦520 Million</p>
+                <p>Engine: 5.2-liter naturally aspirated V10</p>
+                <p>Power Output: Approximately 630 horsepower (varies slightly by model)</p>
+                <p>Top Speed: Over 200 mph</p>
+            </div>
+        </div>
+
+        <!-- Model Item 2 -->
+        <div class="model-item">
+            <img src="Lamborghini/model/Blacked out Lamborghini Aventador SV ♠️ A Huge….jpg" alt="2024 Lamborghini Aventador">
+            <div class="model-details">
+                <h2>2024 Lamborghini Aventador</h2>
+                <p>Price: ₦600 Million</p>
+                <p>Engine: 6.5-liter naturally aspirated V12</p>
+                <p>Power Output: Estimated 769 horsepower</p>
+                <p>Top Speed: Over 217 mph</p>
+            </div>
+        </div>
+
+        <!-- Model Item 3 -->
+        <div class="model-item">
+            <img src="Lamborghini/model/2022lambo urus.jpg" alt="2022 Lamborghini Urus">
+            <div class="model-details">
+                <h2>2022 Lamborghini Urus</h2>
+                <p>Price: ₦250 Million</p>
+                <p>Engine: 4.0-liter twin-turbocharged V8</p>
+                <p>Top Speed: 190 mph</p>
+            </div>
+        </div>
+    </div>
+           <!-- Gallery Section -->
+    <div id="gallery" class="section">
+        <h1>Gallery</h1>
+        <p>Explore stunning images and videos of Lamborghini's iconic cars</p>
+        <div id="container">
+            <ul class="gallery">
+                <li>
+                    <video width="200px" src="Lamborghini/gallery/reta.mp4" autoplay muted></video>
+                </li>
+                <li>
+                    <img width="200px" src="Lamborghini/gallery/download (1).jpg" alt="Lamborghini Image 1">
+                </li>
+                <li>
+                    <img width="200px" src="Lamborghini/gallery/download (2).jpg" alt="Lamborghini Image 2">
+                </li>
+                <li>
+                    <img width="200px" src="Lamborghini/gallery/download.jpg" alt="Lamborghini Image 3">
+                </li>
+                <li>
+                    <img width="200px" src="Lamborghini/gallery/images.jpg" alt="Lamborghini Image 4">
+                </li>
+                <li>
+                    <video width="200px" src="Lamborghini/gallery/20153917-uhd_3840_2160_24fps.mp4" autoplay ></video>
+                </li>
+            </ul>
+        </div>
+    </div>
+            <!--Contact section-->
+        <div id="Contact" class="section">
+            <h1>Contact</h1>
+            <p>
+                Reach out to us for inquiries, complains and feedback through
+                <br>
+                Email:<a href="mailto:automobililamborghini@legalmail.it.">automobililamborghini@legalmail.it.</a>
+                <br>
+                phone:<a href="callto:+39 051 9597282">+39 051 9597282</a>
+            </p>
+            <form id="Contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <br>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
